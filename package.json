@@ -1,0 +1,25 @@
+{
+  "name": "ccs-music-jam",
+  "module": "src/frontend/index.html",
+  "scripts": {
+    "dev": "concurrently \"bun run server\" \"sleep 1 && bunx vite\"",
+    "server": "bun run src/backend/server.ts",
+    "client": "bunx vite",
+    "build": "bunx vite build",
+    "preview": "bunx vite preview"
+  },
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest",
+    "concurrently": "^9.2.1",
+    "vite": "^8.0.3"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "dashjs": "^5.1.1",
+    "youtubei.js": "^17.0.1"
+  }
+}
